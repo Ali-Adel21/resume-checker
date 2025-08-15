@@ -1,87 +1,106 @@
-# Welcome to React Router!
 
-A modern, production-ready template for building full-stack React applications using React Router.
+# 🚀 Resume Checker AI
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Empower your job search with intelligent, actionable resume feedback.  
+Built with React, TypeScript, Vite, and AI-powered analysis.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
+---
+
+## Overview
+
+**Resume Checker AI** is a modern web application that helps job seekers optimize their resumes for Applicant Tracking Systems (ATS) and real recruiters.  
+Upload your resume (PDF), get instant feedback, and actionable tips powered by advanced AI models.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- **AI-Powered Resume Analysis:**  
+	Get detailed feedback on ATS compatibility, tone, content, structure, and skills.
+- **PDF Upload & Conversion:**  
+	Upload your resume in PDF format; the app converts and analyzes it instantly.
+- **Visual Feedback:**  
+	See your resume score and improvement tips in a clean, interactive dashboard.
+- **Secure & Private:**  
+	Your data is processed securely; resumes are not shared or stored beyond analysis.
+- **Responsive Design:**  
+	Works seamlessly on desktop and mobile devices.
+
+## Tech Stack
+
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS
+- **State Management:** Zustand
+- **Routing:** React Router
+- **PDF Processing:** pdfjs-dist
+- **AI Integration:** Claude Sonnet 4 (via Puter.js)
+- **Deployment:** Docker-ready, cloud-friendly
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js 20+
+- npm
+
 ### Installation
 
-Install the dependencies:
-
 ```bash
+git clone https://github.com/Ali-Adel21/resume-checker.git
+cd resume-checker
 npm install
 ```
 
 ### Development
 
-Start the development server with HMR:
-
 ```bash
 npm run dev
 ```
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
+### Build for Production
 
 ```bash
 npm run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+### Docker
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+docker build -t resume-checker .
+docker run -p 3000:3000 resume-checker
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## Usage
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+1. **Sign In:** Log in securely to access resume analysis.
+2. **Upload Resume:** Drag and drop your PDF resume.
+3. **Get Feedback:** Instantly view your ATS score and improvement suggestions.
+4. **Iterate:** Apply tips and re-upload for better results.
 
-### DIY Deployment
+## Deployment
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+- Ready for cloud platforms (AWS, Azure, GCP, Railway, Fly.io)
+- Docker support for easy containerization
 
-Make sure to deploy the output of `npm run build`
+## Contributing
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## Styling
+## Contact
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+- **Ali Adel**  
+	[LinkedIn](https://www.linkedin.com/in/aliadel-dev)  
+	[Email](mailto:aliasharaf4741@gmail.com)
 
 ---
 
-Built with ❤️ using React Router.
+> _“Built to help you land your dream job with smarter, data-driven resumes.”_
