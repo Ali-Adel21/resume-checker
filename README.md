@@ -75,8 +75,8 @@ npm run build
 ### Docker
 
 ```bash
-docker build -t resume-checker .
-docker run -p 3000:3000 resume-checker
+docker pull aliadell/resume-checker:latest
+docker run -p 3000:3000 aliadell/resume-checker
 ```
 
 ## Usage
